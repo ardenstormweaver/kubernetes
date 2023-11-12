@@ -16,5 +16,5 @@ ARG BASE
 FROM ${BASE}
 ARG ARCH
 ADD bin/pause-linux-${ARCH} /pause
-USER 65535:65535
+USER root:root
 ENTRYPOINT ["/pause"]
